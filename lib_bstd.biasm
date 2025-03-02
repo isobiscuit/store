@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+
+ ;; Biscalls
+
+
+BISC_EXIT:
+    load eax bisc_call_num_0
+    int 0x45
+    ret
+BISC_HARDWARE:
+    load eax bisc_call_num_1
+    int 0x45
+    ret
+BISC_SLEEP:
+    load eax bisc_call_num_2
+    int 0x45
+    ret
+BISC_INPUT:
+    load eax bisc_call_num_3
+    int 0x45
+    ret
+BISC_WRITE:
+    load eax bisc_call_num_4
+    int 0x45
+    ret
+BISC_DEBUG:
+    load eax bisc_call_num_5
+    int 0x45
+    ret
+
+
+bisc_call_num_0:
+    0x0
+bisc_call_num_1:
+    0x1
+bisc_call_num_2:
+    0x2
+bisc_call_num_3:
+    0x3
+bisc_call_num_4:
+    0x4
+bisc_call_num_5:
+    0x5
+
+
+            
