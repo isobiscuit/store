@@ -7,11 +7,37 @@ sqrt:
     ret
 
     
-sin_approx: ;; x -> eax
+sin_approx:
     ;; sin(x) ≈ x - x^3/3! + x^5/5! - x^7/7!
-    mov ebx, eax   ; x
-    mul ebx        ; x^2
-    mov ecx, eax   ; x^2
-    mul ebx        ; x^3
-    div ecx        ; x^3 / 3!
+        
+    mov ebx eax
+    mul ebx ebx
+        
+    mov ecx eax
+    mul ebx ecx
+    
+    load ebx 6
+    div ebx ecx
+    
+    mov ebx eax
+    mul ebx ebx
+    
+    load ebx 120
+    div ebx ecx
     ret
+    
+
+load_pi:
+    load eax lib_math_num_pi_x_1000000000000
+    load ebx lib_math_num_1000000000000
+    div eax ebx
+    ret
+
+lib_math_num_pi_x_1000000000000:
+    0x492559F64F
+    lib_math_num_1000000000000:
+    0xE8D4A51000
+lib_math_num_6:
+    0x6
+lib_math_num_120:
+    0x78
