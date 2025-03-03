@@ -114,7 +114,9 @@ SET_TERMINAL_COLOR_LIGHTRED:
 
 
 
-
+PRINTLN:
+    load ebx println_num_1
+    call BISC_WRITE
 
 
 
@@ -164,7 +166,8 @@ bisc_call_num_4:
 bisc_call_num_5:
     0x5
 
-
+println_num_1:
+    0x1
 
 terminal_color_reset:
     0x00
