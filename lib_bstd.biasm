@@ -18,91 +18,91 @@ TERMINAL_COLOR_RESET:
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_WHITE:
     load  ebx terminal_color_white
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_BLACK:
     load  ebx terminal_color_black
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_YELLOW:
     load  ebx terminal_color_yellow
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_RED:
     load  ebx terminal_color_red
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_BLUE:
     load  ebx terminal_color_blue
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_GREEN:
     load  ebx terminal_color_green
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_MAGENTA:
     load  ebx terminal_color_magenta
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_CYAN:
     load  ebx terminal_color_cyan
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTYELLOW:
     load  ebx terminal_color_lightyellow
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTBLACK:
     load  ebx terminal_color_lightblack
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTCYAN:
     load  ebx terminal_color_lightcyan
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTMAGENTA:
     load  ebx terminal_color_lightmagenta
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTGREEN:
     load  ebx terminal_color_lightgreen
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTWHITE:
     load  ebx terminal_color_lightwhite
     store ebx 0xffff0000
     call BISC_HARDWARE
     ret
 
-SET_TERMINAL_COLOR_:
+SET_TERMINAL_COLOR_LIGHTRED:
     load  ebx terminal_color_lightred
     store ebx 0xffff0000
     call BISC_HARDWARE
