@@ -49,3 +49,4 @@ lib_math_num_120:
     0x78
 
 __lib_math_skip_math_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7:
+    mov eax eax

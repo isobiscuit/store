@@ -201,4 +201,4 @@ terminal_color_lightred:
 
 
 __lib_bstd_skip_bstd_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7:
-    
+    mov eax eax
