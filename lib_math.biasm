@@ -1,3 +1,9 @@
+ ;; Author Trollmii
+jmp __lib_math_skip_math_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7
+
+
+
+
 sqrt:
     mov ebx, eax
     shr ebx, 1
@@ -41,3 +47,5 @@ lib_math_num_6:
     0x6
 lib_math_num_120:
     0x78
+
+__lib_math_skip_math_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7:
