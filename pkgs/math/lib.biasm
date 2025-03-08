@@ -26,9 +26,9 @@ load_pi:
     ret
 
 lib_math_num_pi_x_1000000000000:
-    0x492559F64F
+    0x492559f64f
 lib_math_num_1000000000000:
-    0xE8D4A51000
+    0xe8d4a51000
 lib_math_num_1:
     0x1
 
