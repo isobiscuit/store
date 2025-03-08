@@ -6,9 +6,9 @@ jmp __lib_math_skip_math_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7
 
 sqrt:
     mov ebx eax
-    shr ebx 1
+    shr ebx lib_math_num_1
     add ebx eax
-    shr ebx 1
+    shr ebx lib_math_num_1
     mov eax ebx
     ret
 
@@ -22,13 +22,13 @@ sin_approx:
     mov ecx eax
     mul ebx ecx
     
-    load ebx 6
+    load ebx lib_math_num_6
     div ebx ecx
     
     mov ebx eax
     mul ebx ebx
     
-    load ebx 120
+    load ebx lib_math_num_120
     div ebx ecx
     ret
     
@@ -43,6 +43,8 @@ lib_math_num_pi_x_1000000000000:
     0x492559F64F
     lib_math_num_1000000000000:
     0xE8D4A51000
+lib_math_num_1:
+    0x1
 lib_math_num_6:
     0x6
 lib_math_num_120:
