@@ -117,7 +117,7 @@ SET_TERMINAL_COLOR_LIGHTRED:
 PRINTLN:
     load ebx println_num_1
     call BISC_WRITE
-
+    ret
 
 
 
