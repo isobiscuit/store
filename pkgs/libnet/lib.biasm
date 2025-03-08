@@ -52,6 +52,12 @@ SOCKET_RECV:
     ret
 
 
+SOCKET_EXIT:
+    load ax libnet_socket_action_exit
+    store ax 0xffff0100
+    load eax libnet_biscuit_call_update_hardware
+    int 0x45
+    ret
 
 
 
