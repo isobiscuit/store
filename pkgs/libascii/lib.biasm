@@ -1,0 +1,138 @@
+
+
+
+
+backspace:
+    0x'8'
+
+
+space:
+    0x'20'
+
+
+
+alpha_A:
+    0x'41'
+alpha_B:
+    0x'42'
+alpha_C:
+    0x'43'
+alpha_D:
+    0x'44'
+alpha_E:
+    0x'45'
+alpha_F:
+    0x'46'
+alpha_G:
+    0x'47'
+alpha_H:
+    0x'48'
+alpha_I:
+    0x'49'
+alpha_J:
+    0x'4a'
+alpha_K:
+    0x'4b'
+alpha_L:
+    0x'4c'
+alpha_M:
+    0x'4d'
+alpha_N:
+    0x'4e'
+alpha_O:
+    0x'4f'
+alpha_P:
+    0x'50'
+alpha_Q:
+    0x'51'
+alpha_R:
+    0x'52'
+alpha_S:
+    0x'53'
+alpha_T:
+    0x'54'
+alpha_U:
+    0x'55'
+alpha_V:
+    0x'56'
+alpha_W:
+    0x'57'
+alpha_X:
+    0x'58'
+alpha_Y:
+    0x'59'
+alpha_Z:
+    0x'5a'
+alpha_a:
+    0x'61'
+alpha_b:
+    0x'62'
+alpha_c:
+    0x'63'
+alpha_d:
+    0x'64'
+alpha_e:
+    0x'65'
+alpha_f:
+    0x'66'
+alpha_g:
+    0x'67'
+alpha_h:
+    0x'68'
+alpha_i:
+    0x'69'
+alpha_j:
+    0x'6a'
+alpha_k:
+    0x'6b'
+alpha_l:
+    0x'6c'
+alpha_m:
+    0x'6d'
+alpha_n:
+    0x'6e'
+alpha_o:
+    0x'6f'
+alpha_p:
+    0x'70'
+alpha_q:
+    0x'71'
+alpha_r:
+    0x'72'
+alpha_s:
+    0x'73'
+alpha_t:
+    0x'74'
+alpha_u:
+    0x'75'
+alpha_v:
+    0x'76'
+alpha_w:
+    0x'77'
+alpha_x:
+    0x'78'
+alpha_y:
+    0x'79'
+alpha_z:
+    0x'7a'
+
+digit_0:
+    0x'30'
+digit_1:
+    0x'31'
+digit_2:
+    0x'32'
+digit_3:
+    0x'33'
+digit_4:
+    0x'34'
+digit_5:
+    0x'35'
+digit_6:
+    0x'36'
+digit_7:
+    0x'37'
+digit_8:
+    0x'38'
+digit_9:
+    0x'39'
