@@ -18,6 +18,8 @@ SOCKET_CONNECT_UDP:
 
     load b libnet_standard_bufsize
     store b 0xffff0106
+    load eax libnet_biscuit_call_update_hardware
+    int 0x45
     ret
 SOCKET_CONNECT_TCP:
     load ax libnet_socket_action_connect
@@ -31,16 +33,22 @@ SOCKET_CONNECT_TCP:
 
     load b libnet_standard_bufsize
     store b 0xffff0106
+    load eax libnet_biscuit_call_update_hardware
+    int 0x45
     ret
 
 SOCKET_SEND:
     load ax libnet_socket_action_send
     store ax 0xffff0100
+    load eax libnet_biscuit_call_update_hardware
+    int 0x45
     ret
 
 SOCKET_RECV:
     load ax libnet_socket_action_recv
     store ax 0xffff0100
+    load eax libnet_biscuit_call_update_hardware
+    int 0x45
     ret
 
 
@@ -70,5 +78,7 @@ libnet_socket_kind_udp:
 libnet_socket_kind_tcp:
     0x1
 
+libnet_biscuit_call_update_hardware:
+    0x1
 __libnet_skip_net_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7:
     mov eax eax
