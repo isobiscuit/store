@@ -47,6 +47,8 @@ SOCKET_SEND:
 SOCKET_RECV:
     load ax libnet_socket_action_recv
     store ax 0xffff0100
+    load ax libnet_standard_bufsize
+    store ax 0xffff0106
     load eax libnet_biscuit_call_update_hardware
     int 0x45
     ret
