@@ -1,0 +1,73 @@
+ ;; Author: TrollMii
+jmp __libnet_skip_net_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7
+
+
+
+
+
+
+SOCKET_CONNECT_UDP:
+    load ax libnet_socket_action_connect
+    store ax 0xffff0100
+
+    load bx libnet_socket_af_inet
+    store bx 0xffff0101
+
+    load cx libnet_socket_kind_udp
+    store cx 0xffff0102
+
+    load b libnet_standard_bufsize
+    store b 0xffff0106
+    ret
+SOCKET_CONNECT_TCP:
+    load ax libnet_socket_action_connect
+    store ax 0xffff0100
+
+    load bx libnet_socket_af_inet
+    store bx 0xffff0101
+
+    load cx libnet_socket_kind_tcp
+    store cx 0xffff0102
+
+    load b libnet_standard_bufsize
+    store b 0xffff0106
+    ret
+
+SOCKET_SEND:
+    load ax libnet_socket_action_send
+    store ax 0xffff0100
+    ret
+
+SOCKET_RECV:
+    load ax libnet_socket_action_recv
+    store ax 0xffff0100
+    ret
+
+
+
+
+
+
+
+
+
+libnet_socket_action_bind:
+    0x0
+libnet_socket_action_connect:
+    0x1
+libnet_socket_action_send:
+    0x2
+libnet_socket_action_recv:
+    0x3
+libnet_socket_action_exit:
+    0x4
+
+libnet_socket_af_inet:
+    0x0
+libnet_socket_kind_udp:
+    0x0
+libnet_socket_kind_tcp:
+    0x1
+
+__libnet_skip_net_funcs_5d0b2f4e9bc0c140ad8d1288f4f74df7:
+    mov eax eax
