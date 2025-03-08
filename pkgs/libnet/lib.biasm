@@ -47,7 +47,8 @@ SOCKET_RECV:
 
 
 
-
+libnet_standard_bufsize:
+    0x2000
 
 
 
