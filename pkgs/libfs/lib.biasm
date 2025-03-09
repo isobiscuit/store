@@ -1,0 +1,18 @@
+jmp __libfs_skip_libfs_funcs_6d5a66f468c5410d8b8afa10e76885b8
+
+
+
+WRITE_FILE:
+    load eax 6
+    int 0x45
+
+
+
+READ_FILE:
+    load eax 7
+    int 0x45
+
+
+
+__libfs_skip_libfs_funcs_6d5a66f468c5410d8b8afa10e76885b8:
+    mov eax eax
