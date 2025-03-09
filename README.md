@@ -17,7 +17,7 @@ If you would like to have a library calls `mylib`, then:
 This is a normal biasm file
 
 ### Require JSON
-this is optionial since the new bfetcher structure!
+this is optional since the new bfetcher structure!
 ```
 {
     "require": [
